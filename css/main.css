@@ -14,7 +14,7 @@ body {
     background-color: black;
 
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../images/Perfect-Grilled-Cheese-Sandwich-7.webp);
+    background-image: url(../images/ll.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 
@@ -22,15 +22,31 @@ body {
     color: white;
 }
 
-header > h1 { text-align: left; padding: 8px; }
+header > h1 { text-align:center; padding: 8px; }
 header {
-    background-color:rgba(249, 238, 238, 0.689);
-    trans
+    background-color:white;
+    
     position: relative;
     top: 0;
-    text-align: left;
+    text-align:left;
+   }
+   header nav { position: relative; }
+
+header nav ul { 
+  list-style-type: none; 
+  position: absolute; 
+  color: black;
+  top: -45px; 
+  right: 200px; 
 }
-    #main-logo { width: 200px; padding: 10px 0;
+
+header nav ul li { 
+  margin: 0 30px; 
+  display: inline-block;
+  cursor: pointer;
+}
+
+    #main-logo { width: 150px; padding: 10px 0;
     }
 article { 
     width: 25%; 
@@ -45,15 +61,15 @@ article {
 
 main { text-align: center; }
 
-article > h2 { color: gray;  padding: 4px 8px; }
+article > h2 { color: rgb(93, 154, 189);  padding: 4px 8px; }
 
-article:first-of-type { border: 4px solid gray; }
+article:first-of-type { border: 4px solid rgb(10, 70, 85); }
 
-#inprogress { border: 4px solid red; }
-#inprogress h2 { color: red; }
+#inprogress { border: 4px solid rgb(10, 70, 85); }
+#inprogress h2 { color:  rgb(93, 154, 189); }
 
-#done { border: 4px solid green; }
-#done h2 { color: green; }
+#done { border: 4px solid  rgb(10, 70, 85); }
+#done h2 { color: rgb(93, 154, 189); }
 
 ul { list-style-type: none; }
 
@@ -61,14 +77,31 @@ ul li { padding: 6px 8px; text-transform: uppercase; }
 
 .todo li:nth-child(odd) { background-color: rgba(255, 255, 255, 0.2)}
 
-.inprogress li:nth-child(odd) { background-color: rgba(255, 0, 0, 0.5)}
+.inprogress li:nth-child(odd) { background-color: rgba(255, 255, 255, 0.2)}
 
-.done li:nth-child(odd) { background-color: rgba(0, 255, 0, 0.5)}
-input [type="checkbox"] { margin-right: 8px;}
+.done li:nth-child(odd) { background-color: rgba(255, 255, 255, 0.2)}
+input [type="checkbox"] { margin-right: 20px;}
 
 
 
-input[type="checkbox"]:checked + span::after{
-    content: 'hello';
-   
+input[type="checkbox"]:checked+span::after{
+    content: '\2713';
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: rgb(13, 213, 236);
+    border: 4px solid rgb(10, 70, 85);
+ text-align:right;
+}
+.sticky_footer {
+    position:relative;
+    bottom:100%;
+
+    height: 80px;
+   font-size: xx-large;
+    text-align: center;
+    
+    padding: 200px;
+    font-style:times;
 }
